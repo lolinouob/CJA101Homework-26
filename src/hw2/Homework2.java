@@ -1,14 +1,14 @@
 package hw2;
 
-public class HomeWork2 {
+public class Homework2 {
 	public static void main(String[] args) {
 		
 	//1.請設計一隻Java程式，計算1～1000的偶數和(2+4+6+8+…+1000)
-		int sum = 0;
+		int evenSum = 0;
 		for(int i = 2; i <= 1000; i += 2) {
-			sum += i;
+			evenSum += i;
 		}
-		System.out.println("1～1000的偶數和 = " + sum);
+		System.out.println("1～1000的偶數和 = " + evenSum);
 		
 		
     //2.請設計一隻Java程式，計算1～10的連乘積(1*2*3*…*10) (用for迴圈)
@@ -43,8 +43,8 @@ public class HomeWork2 {
 	//5.阿文很熱衷大樂透(1 ～49)，但他不喜歡有4的數字，不論是個位數或是十位數。
 	//	請設計一隻程式，輸出結果為阿文可以選擇的數字有哪些？總共有幾個？
 
-		String numAvailable = "";
-		int numAmount = 0;
+		String numList = "";
+		int numCount = 0;
 
 		
 		for(int i = 1; i <= 49; i++) {
@@ -57,17 +57,17 @@ public class HomeWork2 {
                 continue;
             }
     		
-//          // 也可透過數字轉為字串方式，檢查是否包含'4'
+//          // 可透過數字轉為字串方式，檢查是否包含'4'
 //          if (Integer.toString(i).contains("4")) {
 //              continue;
 //          }
 			
-			numAvailable = numAvailable + " " + i;
-			numAmount++;
+            numList = numList + " " + i;
+			numCount++;
 			
 		}
-		System.out.println("阿文可以選擇的數字共有" + numAmount + "個");
-		System.out.println("有這些：" + numAvailable);
+		System.out.println("阿文可以選擇的數字共有" + numCount + "個");
+		System.out.println("有這些：" + numList);
 		
 
 		

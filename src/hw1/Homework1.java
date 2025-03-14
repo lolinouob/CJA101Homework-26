@@ -1,6 +1,6 @@
 package hw1;
 
-public class HomeWork1 {
+public class Homework1 {
 	
 	public static void main(String[] args) {
 		
@@ -17,12 +17,12 @@ public class HomeWork1 {
 		
 		//2.請設計一隻Java程式，計算200顆蛋共是幾打幾顆？(一打為12顆)
 		
-		int eggTotal = 200;
+		int totalEggs = 200;
 		
-		int dozenCount = eggTotal / 12;
-		int eggRemaining = eggTotal % 12;
+		int dozenCount = totalEggs / 12;
+		int remainingEggs = totalEggs % 12;
 		
-		System.out.println(eggTotal+"顆蛋是"+dozenCount+"打"+eggRemaining+"顆");
+		System.out.println(totalEggs+"顆蛋是"+dozenCount+"打"+remainingEggs+"顆");
 
 		
 		//3.請由程式算出256559秒為多少天、多少小時、多少分與多少秒
