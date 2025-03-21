@@ -16,7 +16,7 @@ public class LotterySimulation {
 			// 驗證是否輸入型別
 			if (!sc.hasNextInt()) {
 				System.out.println("輸入錯誤！請輸入 1~9 之間的數字。");
-				sc.next();  // 清除錯誤的輸入
+				sc.nextLine();  // 接收並棄掉殘留的錯誤輸入內容
 				System.out.println();
 				continue;
 			}

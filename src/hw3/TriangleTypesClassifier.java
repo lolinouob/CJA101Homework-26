@@ -25,7 +25,7 @@ public class TriangleTypesClassifier {
             	System.out.println("格式錯誤，請確認是否輸入為整數");
     			System.out.println();				
 
-                sc.next(); // 清除錯誤輸入
+    			sc.nextLine();  // 接收並棄掉殘留的錯誤輸入內容
             }
 			
 		}

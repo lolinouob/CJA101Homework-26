@@ -23,7 +23,7 @@ public class NumberGuessing {
 				// 驗證是否輸入型別
 				if (!sc.hasNextInt()) {
 					System.out.println("輸入錯誤！請輸入整數值。");
-					sc.next();  // 清除錯誤的輸入
+					sc.nextLine();  // 接收並棄掉殘留的錯誤輸入內容
 					continue;
 				}
 				
@@ -44,7 +44,7 @@ public class NumberGuessing {
 			System.out.println();
 			
 			
-			System.out.println("繼續玩？(y/n)");
+			System.out.println("繼續玩？(按 n 結束，任意鍵繼續)");
             String choice = sc.next().trim().toLowerCase();
 
             if (choice.equals("n")) {
