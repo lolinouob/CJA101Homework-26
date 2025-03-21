@@ -43,7 +43,18 @@ public class NumberGuessing {
 			System.out.println("答對了!答案就是" + randomNum);
 			System.out.println();
 			
+			
+			System.out.println("繼續玩？(y/n)");
+            String choice = sc.next().trim().toLowerCase();
+
+            if (choice.equals("n")) {
+                System.out.println("遊戲結束");
+                break;
+            }
+			
 		}
+		
+		sc.close();
 		
 	}
 

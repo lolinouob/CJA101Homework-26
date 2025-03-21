@@ -11,7 +11,7 @@ public class LotterySimulation {
 		
 		while(true) {
 						
-			System.out.println("阿文...請輸入你討厭哪個數字？");
+			System.out.println("阿文...請輸入你討厭哪個數字？(輸入 0 退出)");
 			
 			// 驗證是否輸入型別
 			if (!sc.hasNextInt()) {
@@ -23,6 +23,11 @@ public class LotterySimulation {
 			
 			int dislikeNum = sc.nextInt();
 			System.out.println();
+			
+			if (dislikeNum == 0) {  // 輸入0結束程式
+	            System.out.println("結束使用");
+	            break;
+	        }
 			
 			// 驗證輸入範圍
 			if (dislikeNum < 1 || dislikeNum > 9) {
@@ -40,6 +45,7 @@ public class LotterySimulation {
 			System.out.println();
 
 		}
+		sc.close(); // 迴圈結束後關閉Scanner
 	}
 	
 	
